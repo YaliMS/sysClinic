@@ -57,6 +57,7 @@ namespace Interfaz
             this.Controls.Add(this.textEdit1);
             this.Name = "ucNEmplead";
             this.Size = new System.Drawing.Size(1025, 539);
+            this.Load += new System.EventHandler(this.ucNEmplead_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
