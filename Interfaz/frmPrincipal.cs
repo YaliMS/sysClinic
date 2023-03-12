@@ -16,5 +16,15 @@ namespace Interfaz
         {
             InitializeComponent();
         }
+
+        private void AccordionControlElement1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AccordionControlElement3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
