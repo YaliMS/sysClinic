@@ -5,8 +5,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Text;
 using System.Windows.Forms;
+using DevExpress.DXperience.Demos;
 
 namespace Interfaz
 {
@@ -17,12 +19,44 @@ namespace Interfaz
             InitializeComponent();
         }
 
-        private void AccordionControlElement1_Click(object sender, EventArgs e)
+        async Task LoadModuleAsync(ModuleInfo module)
         {
+            await Task.Factory.StartNew(() =>
+            {
+                    if (!fluentDesignFormContainer1.Controls.ContainsKey(module.Name))
+                    { 
+                        TutorialControlBase control = module.TModule as TutorialControlBase;
 
+                        if(control != null)
+                        {
+                            control.Dock = DockStyle.Fill;
+                            control.CreateWaitDialog();
+                            fluentDesignFormContainer1.Invoke(new MethodInvoker(delegate()
+                            {
+                                fluentDesignFormContainer1.Controls.Add(control);
+                                control.BringToFront();
+                            }));
+                        }
+                    }
+                    else
+                    {
+                        var control = fluentDesignFormContainer1.Controls.Find(module.Name, true);
+                    if (control.Length == 1)
+                        fluentDesignFormContainer1.Invoke
+                        (
+                            new MethodInvoker
+                            (
+                                delegate ()
+                                {
+                                    control[0].BringToFront();
+                                }
+
+                            ));
+                    }
+            });
         }
 
-        private void AccordionControlElement3_Click(object sender, EventArgs e)
+        private void frmPrincipal_Load(object sender, EventArgs e)
         {
 
         }
