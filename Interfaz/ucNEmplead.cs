@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Interfaz
 {
-    public partial class ucNEmplead : DevExpress.DXperience.Demos.TutorialControlBase // DevExpress.XtraEditors.XtraUserControl
+    public partial class ucNEmpleado : DevExpress.DXperience.Demos.TutorialControlBase // DevExpress.XtraEditors.XtraUserControl
     {
-        public ucNEmplead()
+        public ucNEmpleado()
         {
             InitializeComponent();
         }

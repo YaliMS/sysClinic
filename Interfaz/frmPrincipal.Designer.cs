@@ -39,6 +39,7 @@ namespace Interfaz
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
+            this.itemNav = new DevExpress.XtraBars.BarStaticItem();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             this.SuspendLayout();
@@ -89,6 +90,7 @@ namespace Interfaz
             this.NE.Name = "NE";
             this.NE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.NE.Text = "Nuevo";
+            this.NE.Click += new System.EventHandler(this.NE_Click);
             // 
             // EE
             // 
@@ -141,11 +143,20 @@ namespace Interfaz
             // fluentDesignFormControl1
             // 
             this.fluentDesignFormControl1.FluentDesignForm = this;
+            this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.itemNav});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
             this.fluentDesignFormControl1.Size = new System.Drawing.Size(834, 31);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
+            this.fluentDesignFormControl1.TitleItemLinks.Add(this.itemNav);
+            // 
+            // itemNav
+            // 
+            this.itemNav.Caption = "barStaticItem1";
+            this.itemNav.Id = 0;
+            this.itemNav.Name = "itemNav";
             // 
             // frmPrincipal
             // 
@@ -179,5 +190,6 @@ namespace Interfaz
         private DevExpress.XtraBars.Navigation.AccordionControlElement EE;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
+        private DevExpress.XtraBars.BarStaticItem itemNav;
     }
 }

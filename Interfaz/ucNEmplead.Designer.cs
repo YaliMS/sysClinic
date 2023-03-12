@@ -1,7 +1,7 @@
 ﻿
 namespace Interfaz
 {
-    partial class ucNEmplead
+    partial class ucNEmpleado
     {
         /// <summary> 
         /// Required designer variable.
@@ -49,13 +49,13 @@ namespace Interfaz
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "labelControl1";
             // 
-            // ucNEmplead
+            // ucNEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.textEdit1);
-            this.Name = "ucNEmplead";
+            this.Name = "ucNEmpleado";
             this.Size = new System.Drawing.Size(1025, 539);
             this.Load += new System.EventHandler(this.ucNEmplead_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();

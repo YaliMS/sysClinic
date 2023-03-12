@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Text;
 using System.Windows.Forms;
 using DevExpress.DXperience.Demos;
+using DevExpress.XtraEditors;
+using System.Collections.Generic;
 
 namespace Interfaz
 {
@@ -58,6 +60,21 @@ namespace Interfaz
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
+          
+        }
+
+        private async void NE_Click(object sender, EventArgs e)
+        {
+            //muestra el userControl al hacer click en el submenu Nuevo
+            this.fluentDesignFormContainer1.Controls.Add(new ucNEmpleado() { Dock = DockStyle.Fill });
+
+            //Muestra en que menu se encuentra "migas de pan"
+            this.itemNav.Caption = $"{accordionControlElement1.Text}/{NE.Text}";
+
+            //if (ModulesInfo.GetItem("ucNEmplead") == null)
+            //    ModulesInfo.Add(new ModulesInfo("ucNEmplead"));
+            ////*//, "fluentDesignFormContainer1.ucNEmplead"));
+            //await LoadModuleAsync(ModulesInfo.GetItem("ucNEmplead")); ;
 
         }
     }
