@@ -99,7 +99,7 @@ namespace Interfaz
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
             this.EE.Name = "EE";
             this.EE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.EE.Text = "Editar3";
+            this.EE.Text = "Editar";
             // 
             // accordionControlElement2
             // 
@@ -130,7 +130,7 @@ namespace Interfaz
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement4.Text = "Editarq";
+            this.accordionControlElement4.Text = "Editar";
             // 
             // fluentDesignFormControl1
             // 
