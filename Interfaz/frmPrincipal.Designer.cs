@@ -99,7 +99,7 @@ namespace Interfaz
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
             this.EE.Name = "EE";
             this.EE.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.EE.Text = "Editar";
+            this.EE.Text = "Editar3";
             // 
             // accordionControlElement2
             // 
