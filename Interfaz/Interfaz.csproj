@@ -56,11 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ucBtn.cs">
+    <Compile Include="uctxt.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucBtn.Designer.cs">
-      <DependentUpon>ucBtn.cs</DependentUpon>
+    <Compile Include="uctxt.Designer.cs">
+      <DependentUpon>uctxt.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -76,8 +76,8 @@
     <Compile Include="ucNEmplead.Designer.cs">
       <DependentUpon>ucNEmplead.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ucBtn.resx">
-      <DependentUpon>ucBtn.cs</DependentUpon>
+    <EmbeddedResource Include="uctxt.resx">
+      <DependentUpon>uctxt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
