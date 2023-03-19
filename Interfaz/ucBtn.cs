@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Interfaz.btn
 {
-
+    [DefaultEvent("_TextChanged")]
 
     public partial class ucBtn : DevExpress.XtraEditors.XtraUserControl
     {
@@ -25,11 +25,27 @@ namespace Interfaz.btn
         //estilo del cuadro de texto o subrayado
         private bool underlineStyle = false;
 
+        private Color borderFocusColor = Color.HotPink;
+        private bool isFocused = false;
+
+
+        //Eventos
+        public event EventHandler _TextChanged;
+
+
         //Constructor
         public ucBtn()
         {
             InitializeComponent();
         }
+
+
+        
+
+
+
+
+
 
         [Category("AlquimiaSoft")]
         public Color BorderColor
@@ -131,22 +147,46 @@ namespace Interfaz.btn
             }
         }
 
+        [Category("AlquimiaSoft")]
+        public Color BorderFocusColor
+        {
+            get
+            {
+                return borderFocusColor;
+            }
+            set
+            {
+                borderFocusColor = value;
+            }
+        }
+
         //Anular metodos de eventos o sobreescribirlos
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
             Graphics graph = e.Graphics;
 
-
             //dibujar el border del cuadro de texto
             using (Pen penBorder=new Pen(borderColor,borderSize))
             {
                 penBorder.Alignment = System.Drawing.Drawing2D.PenAlignment.Inset;
+                if (!isFocused)
+                {
+                    if (underlineStyle)//dibuja el estilo de linea o subrayado
+                        graph.DrawLine(penBorder, 0, this.Height - 1, this.Width, this.Height - 1);
+                    else  //se dibuja el estilo normal del rectangulo
+                        graph.DrawRectangle(penBorder, 0, 0, this.Width - 0.5F, this.Height - 0.5F);
+                }
+                else
+                {
+                    penBorder.Color = borderFocusColor;
 
-                if (underlineStyle)//dibuja el estilo de linea o subrayado
-                    graph.DrawLine(penBorder, 0, this.Height - 1, this.Width, this.Height - 1);
-                else  //se dibuja el estilo normal del rectangulo
-                    graph.DrawRectangle(penBorder,0,0,this.Width-0.5F,this.Height - 0.5F);
+                    if (underlineStyle)//dibuja el estilo de linea o subrayado
+                        graph.DrawLine(penBorder, 0, this.Height - 1, this.Width, this.Height - 1);
+                    else  //se dibuja el estilo normal del rectangulo
+                        graph.DrawRectangle(penBorder, 0, 0, this.Width - 0.5F, this.Height - 0.5F);
+                }
+                
             }
         }
 
@@ -176,9 +216,47 @@ namespace Interfaz.btn
             }
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (_TextChanged != null)
+                _TextChanged.Invoke(sender, e);
+        }
 
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            this.OnClick(e);
+        }
 
+        private void textBox1_MouseEnter(object sender, EventArgs e)
+        {
+            this.OnMouseEnter(e);
+        }
 
+        private void textBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.OnMouseClick(e);
+        }
 
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            this.OnKeyPress(e);
+        }
+
+        private void textBox1_MouseLeave(object sender, EventArgs e)
+        {
+            this.OnMouseLeave(e);
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            isFocused = true;
+            this.Invalidate();
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            isFocused = false;
+            this.Invalidate();
+        }
     }
 }
