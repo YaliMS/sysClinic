@@ -47,9 +47,9 @@ namespace Interfaz
             // fluentDesignFormContainer1
             // 
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(223, 31);
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(189, 31);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(750, 589);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(784, 589);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // accordionControl1
@@ -61,7 +61,7 @@ namespace Interfaz
             this.accordionControl1.Location = new System.Drawing.Point(0, 31);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(223, 589);
+            this.accordionControl1.Size = new System.Drawing.Size(189, 589);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -154,7 +154,7 @@ namespace Interfaz
             // 
             // itemNav
             // 
-            this.itemNav.Caption = "???";
+            this.itemNav.Caption = "...";
             this.itemNav.Id = 0;
             this.itemNav.Name = "itemNav";
             // 

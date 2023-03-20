@@ -8,8 +8,8 @@ using System.Data.SqlClient;
 
 namespace DLL
 { 
-        public class CDconexion
-        {
+        public abstract class ConnectionToSql
+    {
 
             private SqlConnection Conexion = new SqlConnection("server=(local);database=sysClinic;integrated security=tru");
 
