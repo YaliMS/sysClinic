@@ -29,7 +29,16 @@ namespace Interfaz
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.components = new System.ComponentModel.Container();
+            DevExpress.XtraBars.Bar bar2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucNEmpleado));
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -43,6 +52,9 @@ namespace Interfaz
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.ucBtn4 = new Interfaz.btn.ucBtn();
             this.ucBtn7 = new Interfaz.btn.ucBtn();
             this.ucBtn3 = new Interfaz.btn.ucBtn();
@@ -50,19 +62,106 @@ namespace Interfaz
             this.ucBtn2 = new Interfaz.btn.ucBtn();
             this.ucBtn5 = new Interfaz.btn.ucBtn();
             this.ucBtn1 = new Interfaz.btn.ucBtn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.bar3 = new DevExpress.XtraBars.Bar();
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            bar2 = new DevExpress.XtraBars.Bar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // bar2
             // 
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1216, 66);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
+            bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            bar2.BarAppearance.Normal.Options.UseFont = true;
+            bar2.BarName = "Menú principal";
+            bar2.CanDockStyle = ((DevExpress.XtraBars.BarCanDockStyle)(((((DevExpress.XtraBars.BarCanDockStyle.Left | DevExpress.XtraBars.BarCanDockStyle.Top) 
+            | DevExpress.XtraBars.BarCanDockStyle.Right) 
+            | DevExpress.XtraBars.BarCanDockStyle.Bottom) 
+            | DevExpress.XtraBars.BarCanDockStyle.Standalone)));
+            bar2.DockCol = 0;
+            bar2.DockRow = 0;
+            bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem4),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem5),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem6),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem7)});
+            bar2.OptionsBar.AllowQuickCustomization = false;
+            bar2.OptionsBar.AutoPopupMode = DevExpress.XtraBars.BarAutoPopupMode.None;
+            bar2.OptionsBar.RotateWhenVertical = false;
+            bar2.OptionsBar.UseWholeRow = true;
+            bar2.Text = "Menú principal";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Nuevo Empleado";
+            this.barButtonItem2.Id = 2;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.Size = new System.Drawing.Size(50, 50);
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Editar Empleado";
+            this.barButtonItem4.Id = 4;
+            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Guardar";
+            this.barButtonItem5.Id = 5;
+            this.barButtonItem5.ImageOptions.Image = global::Interfaz.Properties.Resources.save_32x32;
+            this.barButtonItem5.ImageOptions.LargeImage = global::Interfaz.Properties.Resources.save_32x32;
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick);
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Cancelar";
+            this.barButtonItem6.Id = 6;
+            this.barButtonItem6.ImageOptions.Image = global::Interfaz.Properties.Resources.deletelist_32x32;
+            this.barButtonItem6.ImageOptions.LargeImage = global::Interfaz.Properties.Resources.deletelist_32x32;
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "Cerrar";
+            this.barButtonItem7.Id = 7;
+            this.barButtonItem7.ImageOptions.Image = global::Interfaz.Properties.Resources.close_32x32;
+            this.barButtonItem7.ImageOptions.LargeImage = global::Interfaz.Properties.Resources.close_32x321;
+            this.barButtonItem7.Name = "barButtonItem7";
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "barButtonItem3";
+            this.barButtonItem3.Id = 3;
+            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
+            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Nuevo Empleado";
+            this.barButtonItem1.Id = 1;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.ImageOptions.SvgImageSize = new System.Drawing.Size(32, 32);
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.Size = new System.Drawing.Size(16, 16);
             // 
             // labelControl3
             // 
@@ -82,7 +181,7 @@ namespace Interfaz
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.DimGray;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(227, 146);
+            this.labelControl1.Location = new System.Drawing.Point(239, 146);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(45, 15);
             this.labelControl1.TabIndex = 36;
@@ -104,7 +203,7 @@ namespace Interfaz
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(227, 264);
+            this.labelControl5.Location = new System.Drawing.Point(244, 266);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(41, 15);
             this.labelControl5.TabIndex = 39;
@@ -114,7 +213,7 @@ namespace Interfaz
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(263, 283);
+            this.radioButton1.Location = new System.Drawing.Point(280, 285);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(82, 19);
             this.radioButton1.TabIndex = 40;
@@ -126,7 +225,7 @@ namespace Interfaz
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(404, 283);
+            this.radioButton2.Location = new System.Drawing.Point(421, 285);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(81, 19);
             this.radioButton2.TabIndex = 41;
@@ -152,7 +251,7 @@ namespace Interfaz
             this.labelControl7.Appearance.ForeColor = System.Drawing.Color.DimGray;
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(227, 86);
+            this.labelControl7.Location = new System.Drawing.Point(239, 86);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(61, 15);
             this.labelControl7.TabIndex = 47;
@@ -164,7 +263,7 @@ namespace Interfaz
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.DimGray;
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Appearance.Options.UseForeColor = true;
-            this.labelControl8.Location = new System.Drawing.Point(227, 199);
+            this.labelControl8.Location = new System.Drawing.Point(239, 199);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(100, 15);
             this.labelControl8.TabIndex = 48;
@@ -186,7 +285,7 @@ namespace Interfaz
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(404, 340);
+            this.radioButton3.Location = new System.Drawing.Point(421, 353);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(66, 19);
             this.radioButton3.TabIndex = 52;
@@ -198,7 +297,7 @@ namespace Interfaz
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(263, 340);
+            this.radioButton4.Location = new System.Drawing.Point(280, 353);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(56, 19);
             this.radioButton4.TabIndex = 51;
@@ -210,11 +309,37 @@ namespace Interfaz
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(227, 321);
+            this.labelControl10.Location = new System.Drawing.Point(244, 334);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(38, 15);
             this.labelControl10.TabIndex = 50;
             this.labelControl10.Text = "Estado";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(564, 264);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(637, 112);
+            this.textBox1.TabIndex = 54;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(201, 231);
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(12, 131);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(212, 245);
+            this.panel1.TabIndex = 56;
             // 
             // ucBtn4
             // 
@@ -230,7 +355,7 @@ namespace Interfaz
             this.ucBtn4.Location = new System.Drawing.Point(922, 165);
             this.ucBtn4.Name = "ucBtn4";
             this.ucBtn4.Padding = new System.Windows.Forms.Padding(7);
-            this.ucBtn4.Size = new System.Drawing.Size(279, 28);
+            this.ucBtn4.Size = new System.Drawing.Size(279, 29);
             this.ucBtn4.TabIndex = 53;
             this.ucBtn4.Texts = "";
             this.ucBtn4.UnderlineStyle = true;
@@ -249,7 +374,7 @@ namespace Interfaz
             this.ucBtn7.Location = new System.Drawing.Point(922, 218);
             this.ucBtn7.Name = "ucBtn7";
             this.ucBtn7.Padding = new System.Windows.Forms.Padding(7);
-            this.ucBtn7.Size = new System.Drawing.Size(279, 28);
+            this.ucBtn7.Size = new System.Drawing.Size(279, 29);
             this.ucBtn7.TabIndex = 53;
             this.ucBtn7.Texts = "";
             this.ucBtn7.UnderlineStyle = true;
@@ -268,7 +393,7 @@ namespace Interfaz
             this.ucBtn3.Location = new System.Drawing.Point(564, 165);
             this.ucBtn3.Name = "ucBtn3";
             this.ucBtn3.Padding = new System.Windows.Forms.Padding(7);
-            this.ucBtn3.Size = new System.Drawing.Size(279, 28);
+            this.ucBtn3.Size = new System.Drawing.Size(279, 29);
             this.ucBtn3.TabIndex = 53;
             this.ucBtn3.Texts = "";
             this.ucBtn3.UnderlineStyle = true;
@@ -287,7 +412,7 @@ namespace Interfaz
             this.ucBtn6.Location = new System.Drawing.Point(564, 218);
             this.ucBtn6.Name = "ucBtn6";
             this.ucBtn6.Padding = new System.Windows.Forms.Padding(7);
-            this.ucBtn6.Size = new System.Drawing.Size(279, 28);
+            this.ucBtn6.Size = new System.Drawing.Size(279, 29);
             this.ucBtn6.TabIndex = 53;
             this.ucBtn6.Texts = "";
             this.ucBtn6.UnderlineStyle = true;
@@ -303,10 +428,10 @@ namespace Interfaz
             this.ucBtn2.BorderColor = System.Drawing.SystemColors.AppWorkspace;
             this.ucBtn2.BorderFocusColor = System.Drawing.Color.HotPink;
             this.ucBtn2.BorderSize = 2;
-            this.ucBtn2.Location = new System.Drawing.Point(227, 165);
+            this.ucBtn2.Location = new System.Drawing.Point(239, 165);
             this.ucBtn2.Name = "ucBtn2";
             this.ucBtn2.Padding = new System.Windows.Forms.Padding(7);
-            this.ucBtn2.Size = new System.Drawing.Size(279, 28);
+            this.ucBtn2.Size = new System.Drawing.Size(279, 29);
             this.ucBtn2.TabIndex = 53;
             this.ucBtn2.Texts = "";
             this.ucBtn2.UnderlineStyle = true;
@@ -322,10 +447,10 @@ namespace Interfaz
             this.ucBtn5.BorderColor = System.Drawing.SystemColors.AppWorkspace;
             this.ucBtn5.BorderFocusColor = System.Drawing.Color.HotPink;
             this.ucBtn5.BorderSize = 2;
-            this.ucBtn5.Location = new System.Drawing.Point(227, 218);
+            this.ucBtn5.Location = new System.Drawing.Point(239, 218);
             this.ucBtn5.Name = "ucBtn5";
             this.ucBtn5.Padding = new System.Windows.Forms.Padding(7);
-            this.ucBtn5.Size = new System.Drawing.Size(279, 28);
+            this.ucBtn5.Size = new System.Drawing.Size(279, 29);
             this.ucBtn5.TabIndex = 53;
             this.ucBtn5.Texts = "";
             this.ucBtn5.UnderlineStyle = true;
@@ -341,30 +466,96 @@ namespace Interfaz
             this.ucBtn1.BorderColor = System.Drawing.SystemColors.AppWorkspace;
             this.ucBtn1.BorderFocusColor = System.Drawing.Color.HotPink;
             this.ucBtn1.BorderSize = 2;
-            this.ucBtn1.Location = new System.Drawing.Point(227, 104);
+            this.ucBtn1.Location = new System.Drawing.Point(239, 104);
             this.ucBtn1.Name = "ucBtn1";
             this.ucBtn1.Padding = new System.Windows.Forms.Padding(7);
-            this.ucBtn1.Size = new System.Drawing.Size(279, 28);
+            this.ucBtn1.Size = new System.Drawing.Size(279, 29);
             this.ucBtn1.TabIndex = 53;
             this.ucBtn1.Texts = "";
             this.ucBtn1.UnderlineStyle = true;
             // 
-            // textBox1
+            // barManager1
             // 
-            this.textBox1.Location = new System.Drawing.Point(564, 264);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(637, 95);
-            this.textBox1.TabIndex = 54;
+            this.barManager1.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            bar2,
+            this.bar3});
+            this.barManager1.DockControls.Add(this.barDockControlTop);
+            this.barManager1.DockControls.Add(this.barDockControlBottom);
+            this.barManager1.DockControls.Add(this.barDockControlLeft);
+            this.barManager1.DockControls.Add(this.barDockControlRight);
+            this.barManager1.Form = this;
+            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barEditItem1,
+            this.barButtonItem1,
+            this.barButtonItem2,
+            this.barButtonItem3,
+            this.barButtonItem4,
+            this.barButtonItem5,
+            this.barButtonItem6,
+            this.barButtonItem7});
+            this.barManager1.MainMenu = bar2;
+            this.barManager1.MaxItemId = 8;
+            this.barManager1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemButtonEdit1});
+            this.barManager1.StatusBar = this.bar3;
             // 
-            // pictureBox1
+            // bar3
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 128);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(201, 231);
-            this.pictureBox1.TabIndex = 55;
-            this.pictureBox1.TabStop = false;
+            this.bar3.BarName = "Barra de estado";
+            this.bar3.CanDockStyle = DevExpress.XtraBars.BarCanDockStyle.Bottom;
+            this.bar3.DockCol = 0;
+            this.bar3.DockRow = 0;
+            this.bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
+            this.bar3.OptionsBar.AllowQuickCustomization = false;
+            this.bar3.OptionsBar.DrawDragBorder = false;
+            this.bar3.OptionsBar.UseWholeRow = true;
+            this.bar3.Text = "Barra de estado";
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(1216, 50);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 519);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(1216, 20);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 50);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 469);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(1216, 50);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 469);
+            // 
+            // barEditItem1
+            // 
+            this.barEditItem1.Caption = "barEditItem1";
+            this.barEditItem1.Edit = this.repositoryItemButtonEdit1;
+            this.barEditItem1.Id = 0;
+            this.barEditItem1.Name = "barEditItem1";
+            // 
+            // repositoryItemButtonEdit1
+            // 
+            this.repositoryItemButtonEdit1.AutoHeight = false;
+            this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
             // 
             // ucNEmpleado
             // 
@@ -372,7 +563,7 @@ namespace Interfaz
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ucBtn4);
             this.Controls.Add(this.ucBtn7);
@@ -394,19 +585,23 @@ namespace Interfaz
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.barDockControlLeft);
+            this.Controls.Add(this.barDockControlRight);
+            this.Controls.Add(this.barDockControlBottom);
+            this.Controls.Add(this.barDockControlTop);
             this.Name = "ucNEmpleado";
             this.Size = new System.Drawing.Size(1216, 539);
             this.Load += new System.EventHandler(this.ucNEmplead_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
@@ -429,5 +624,21 @@ namespace Interfaz
         private btn.ucBtn ucBtn7;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraBars.BarManager barManager1;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
+        private DevExpress.XtraBars.Bar bar3;
+        private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
     }
 }
